@@ -1,0 +1,70 @@
+/* 将卡片放置到中间 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    /* 阴影 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 设置元素溢出行为：当元素的内容超出其容器时，隐藏超出部分的内容（不显示滚动条） */
+    overflow: hidden;
+    /* 元素宽度 300 像素 */
+    width: 300px;
+    /* 元素最大宽度 100% */
+    max-width: 100%;
+    /* 文本左对齐 */
+    text-align: left;
+}
+
+.card-header {
+    background-color: #e9ecef; /* 高级灰色 */
+    color: #183153;
+    padding: 16px;
+}
+
+.card-header h2 {
+    margin: 0;
+    /* 字体大小 */
+    font-size: 1.5rem;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content p {
+    margin: 0;
+    color: #333; /* 深灰色文字 */
+    line-height: 2;
+}
+
+.button {
+    display: inline-block;
+    /* 设置内边距，上下内边距 8 像素，左右内边距 16 像素 */
+    padding: 8px 16px;
+    /* 设置外边距，上外边距 16 像素 */
+    margin-top: 16px;
+    /* 背景颜色 */
+    background-color: #8ca86d; /* 设置为 #8ca86d */
+    /* 文本颜色 */
+    color: #fff;
+    /* 去除链接下划线 */
+    text-decoration: none;
+    /* 圆角按钮 */
+    border-radius: 4px;
+    /* 背景颜色过渡，时间为2s，模式为先先加速后减速 */
+    transition: background-color 2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #728c5e; /* hover 状态的颜色 */
+} 
